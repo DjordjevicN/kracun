@@ -69,6 +69,7 @@ a{
     display: flex;
     top: 30px;
     right: 160px;
+    padding: 0;
 }
 .nav-bar li{
     padding: 0 30px;
@@ -405,6 +406,7 @@ a{
         position: static;
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr; 
+        justify-content: center;
     }
     .logo-wrapper{
         justify-content: center;
@@ -522,9 +524,7 @@ a{
 
 @media only screen and  (max-width : 360px){
     
-   .logoTitle{
-       color: #e01414
-   }
+   
    .hero-animation{
     height: 100px;
     top: 230px;
