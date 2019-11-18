@@ -46,6 +46,7 @@ a{
     height: 80px;
 }
 .logoTitle{
+    
     font-family: var(--montserrat);
     font-weight: 900;
     color: var(--whiteTitle);
@@ -131,10 +132,14 @@ a{
     grid-gap: 20px;
     padding: 30px 0;
 }
-.search p{
+/* .search p{
     margin: 0;
     color: white;
    
+} */
+.label-tag{
+    color: white;
+    /* padding: 30px;  */
 }
 .search input{
     padding: 10px 40px;
@@ -520,3 +525,8 @@ a{
      }
  }
 
+ @media only screen and  (max-width : 360px){
+    .logoTitle{
+        color: #141414;
+    }
+}

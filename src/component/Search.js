@@ -45,7 +45,7 @@ export default function Search({ rooms }) {
                 <form className="search">
                     {/* select type */}
                     <div className="form-group">
-                        <label htmlFor="type">Tip Nekretnine</label>
+                        <label htmlFor="type" className='label-tag'>Tip Nekretnine</label>
                         <select name="type" id="type" value={type} className="form-control" onChange={handleChange}>
                             {types}
                         </select>
@@ -53,7 +53,7 @@ export default function Search({ rooms }) {
                     {/* end select type  */}
                     {/* select location */}
                     <div className="form-group">
-                        <label htmlFor="location">Lokacija</label>
+                        <label htmlFor="location" className='label-tag'>Lokacija</label>
                         <select name="location" id="location" value={location} className="form-control" onChange={handleChange}>
                             {locations}
 
@@ -63,7 +63,7 @@ export default function Search({ rooms }) {
 
                     {/* select location */}
                     <div className="form-group">
-                        <label htmlFor="status">Lokacija</label>
+                        <label htmlFor="status" className='label-tag'>Lokacija</label>
                         <select name="status" id="status" value={status} className="form-control" onChange={handleChange}>
                             {propertyStatus}
 
