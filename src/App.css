@@ -519,22 +519,35 @@ a{
         top: 12%;
     }
  }
- @media only screen and  (max-width : 400px){
-     
-    .logoTitle{
-        color: #929292
-    }
-}
+
 @media only screen and  (max-width : 360px){
     
    .logoTitle{
        color: #e01414
    }
+   .hero-animation{
+    height: 100px;
+    top: 230px;
+
 }
-@media only screen and  (max-width : 320px){
-    
-   .logoTitle{
-       color: #1455e0
-   }
+.logo-animation img{
+    width: 100px;
+    left: 10%;
+    top: 6px;
 }
+.animation-text h1{
+    left: 40%;
+    top: 17px;
+    font-size: 20px;
+}
+.nav-bar li{
+    font-size: 10px;
+}
+.single-property-title{
+    font-size: 20px;
+    top: 25%;
+}
+
+}
+
 
