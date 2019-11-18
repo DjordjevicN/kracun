@@ -187,7 +187,7 @@ a{
     padding-bottom: 160px;
 }
 .property-card{
-    /* border: 1px solid #aaaaaa50; */
+   
     background-image: linear-gradient(to top, rgb(241, 241, 241),rgb(255, 255, 255),rgb(255, 255, 255));
     line-height: 10px;
 }
@@ -549,6 +549,9 @@ a{
 }
 .gallery{
     grid-template-columns: repeat(auto-fit, 340px);
+}
+.gallery-title{
+    font-size: 30px;
 }
 
 }
