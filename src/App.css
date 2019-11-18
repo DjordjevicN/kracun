@@ -547,6 +547,9 @@ a{
     font-size: 20px;
     top: 25%;
 }
+.gallery{
+    grid-template-columns: repeat(auto-fit, 340px);
+}
 
 }
 
