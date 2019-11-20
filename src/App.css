@@ -370,6 +370,12 @@ a{
 .small-images img{
     width: 400px;
 }
+.small-images img:hover{
+    transform: scale(1.8);
+    z-index: 100;
+    
+    transition: all 1000ms ease-in-out;
+}
 .single-property-information{
     text-align: center;
 }
