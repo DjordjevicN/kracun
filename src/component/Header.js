@@ -1,13 +1,15 @@
 import React, { useRef, useEffect } from 'react';
 import { TimelineMax, Power4 } from 'gsap';
+import CSSPlugin from 'gsap/CSSPlugin';
 
 import LogoPart1 from '../images/logo-sklop/part-1.png'
 import LogoPart2 from '../images/logo-sklop/part-2.png'
 import LogoPart3 from '../images/logo-sklop/part-3.png'
 import LogoPart4 from '../images/logo-sklop/part-4.png'
-
+const C = CSSPlugin;
 
 export default function Header() {
+
     let tl1 = new TimelineMax({})
     let element1 = useRef()
     let element2 = useRef()
