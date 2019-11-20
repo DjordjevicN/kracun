@@ -50,6 +50,7 @@ a{
     font-family: var(--montserrat);
     font-weight: 900;
     color: var(--whiteTitle);
+    color: red;
     line-height: 18px;
     margin-top: 43px;
     font-size: 60px;
