@@ -2,12 +2,14 @@ import React from 'react';
 import { FaHome, FaBed, FaBath } from 'react-icons/fa';
 import defaultImg from '../images/details-2.jpeg'
 import { Link } from 'react-router-dom'
+
 export default function Property({ room }) {
     // console.log(room);
+
     const { images, price, name, slug, size, status, location, bedrooms, bathrooms } = room
     return (
         <div>
-            <div className="property-card" data-aos="fade-up">
+            <div className="property-card" >
                 <Link to={`/property/${slug}`} >
                     <img src={images[0] || defaultImg} alt="singleroom" />
                 </Link>

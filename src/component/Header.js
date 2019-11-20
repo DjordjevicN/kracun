@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { TimelineMax, Power4 } from 'gsap';
 import CSSPlugin from 'gsap/CSSPlugin';
-
 import LogoPart1 from '../images/logo-sklop/part-1.png'
 import LogoPart2 from '../images/logo-sklop/part-2.png'
 import LogoPart3 from '../images/logo-sklop/part-3.png'
@@ -64,7 +63,7 @@ export default function Header() {
         <div className='header'>
 
             <div ref={el => { entireElement = el }} className="hero-animation">
-                <div className="logo-animation" data-aos="fade-up">
+                <div className="logo-animation">
                     <img ref={el => { element1 = el }} className="e1" src={LogoPart1} alt="pic" />
                     <img ref={el => { element2 = el }} className="e1" src={LogoPart2} alt="pic" />
                     <img ref={el => { element3 = el }} className="e1" src={LogoPart3} alt="pic" />

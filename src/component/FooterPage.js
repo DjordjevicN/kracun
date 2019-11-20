@@ -27,7 +27,7 @@ export default function FooterPage() {
                         <li><FaCaretRight /> Pravovremene i korisne informacije</li>
                     </ul>
                 </div>
-                <div className="our-social">
+                <div className="our-social" data-aos="fade-left">
                     <h1 className="social-title">Pratite Nas</h1>
                     <ul>
                         <li><FaFacebookF /></li>

@@ -40,7 +40,7 @@ export default function Search({ rooms }) {
 
 
     return (
-        <section className="search-section">
+        <section data-aos="fade-left" className="search-section">
             <div className="search-wrapper">
                 <form className="search">
                     {/* select type */}

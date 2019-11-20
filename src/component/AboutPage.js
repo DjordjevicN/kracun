@@ -5,15 +5,15 @@ export default function AboutPage() {
     return (
         <div>
             <div className="about-wrapper" id="about">
-                <div className="about" data-aos="fade-up">
-                    <div className="photo">
+                <div className="about" >
+                    <div data-aos="fade-right" className="photo">
                         <img src={teamImage} alt="" />
                     </div>
-                    <div className="about-text">
+                    <div data-aos="fade-left" className="about-text">
                         <h1 className="about-title">
                             Ko Smo Mi
                         </h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cumque, neque illo fugit
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cumque, neque illo fugit
                         ut porro
                         tempore quasi beatae, pariatur quidem eligendi repellat quibusdam sint quos voluptatum
                         magni

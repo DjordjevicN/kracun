@@ -5,7 +5,7 @@ export default function PropertyList({ rooms }) {
     // console.log(rooms);
 
     return (
-        <section className="property-gallery-wrapper">
+        <section data-aos="fade-up" className="property-gallery-wrapper">
             <h1 className="gallery-title"> Our <span>Properties</span> </h1>
             <div className="gallery">
                 {rooms.map(item => {

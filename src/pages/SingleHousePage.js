@@ -50,7 +50,7 @@ export default class SingleHousePage extends Component {
                     <div className="small-images">
                         {singleImage}
                     </div>
-                    <div className="single-property-information">
+                    <div data-aos="fade-up" className="single-property-information">
                         <h1 className="property-title">{name}</h1>
                         <p className="address">{location}</p>
                         <div className="info">
