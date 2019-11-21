@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import items from './data'
+// import items from './data'
+import Client from './Contentful'
+
 const RoomContext = React.createContext()
 
 class RoomProvider extends Component {
@@ -19,21 +21,32 @@ class RoomProvider extends Component {
         bathrooms: 0,
         maxPrice: 0
     }
+    getData = async () => {
+        try {
+            let response = await Client.getEntries({})
 
+            let rooms = this.formatData(response.items)
+            // console.log(rooms);
+            let featuredRooms = rooms.filter(room => room.featured === true)
+            let maxPrice = Math.max(...rooms.map(item => item.price))
+
+            this.setState({
+                rooms,
+                featuredRooms,
+                sortedRooms: rooms,
+                loading: false,
+                maxPrice
+            })
+
+        }
+        catch (error) {
+            console.log(error);
+
+        }
+    }
     componentDidMount() {
-        // this.getData()
-        let rooms = this.formatData(items)
-        // console.log(rooms);
-        let featuredRooms = rooms.filter(room => room.featured === true)
-        let maxPrice = Math.max(...rooms.map(item => item.price))
+        this.getData()
 
-        this.setState({
-            rooms,
-            featuredRooms,
-            sortedRooms: rooms,
-            loading: false,
-            maxPrice
-        })
 
     }
     handleChange = (event) => {

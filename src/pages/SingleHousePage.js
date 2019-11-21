@@ -59,7 +59,7 @@ export default class SingleHousePage extends Component {
                             <h4 className="property-bathrooms"><FaBath />  Bathrooms: {bathrooms}</h4>
                             <h4 className='property-capacity'>Status: {status}</h4>
                             <h4 className="property-size">Tip Nekretnine: {type}</h4>
-                            <h4 className='property-price'>Cena: $ {price}</h4>
+                            <h4 className='property-price'>Cena:  {price} &euro;</h4>
                         </div>
                         <p className="property-description">{description}</p>
 

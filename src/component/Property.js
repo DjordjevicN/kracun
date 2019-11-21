@@ -15,7 +15,7 @@ export default function Property({ room }) {
                 </Link>
 
                 <p className="price-box">
-                    od  ${price}
+                    &euro; {price}
                 </p>
 
                 <p className="property-status"> {status}</p>
