@@ -25,7 +25,7 @@ export default class FeaturedProperty extends Component {
             <div data-aos='fade-up' className="featured-content">
                 <div className="gallery-wrapper">
                     <h1 className="gallery-title">
-                        Featured <span>Property</span></h1>
+                        Premium <span>Ponuda</span></h1>
                     <div className="gallery">
                         {loading ? <Loading /> : rooms}
 

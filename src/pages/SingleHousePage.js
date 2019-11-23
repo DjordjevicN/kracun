@@ -35,7 +35,7 @@ export default class SingleHousePage extends Component {
 
         const { name, description, size, price, images, type, status, location, bedrooms, bathrooms } = property
         let singleImage = images.map((image, index) => {
-            return <img key={index} src={image} alt="img" />
+            return <img className="smallImage" key={index} src={image} alt="img" />
         })
         console.log(singleImage);
 

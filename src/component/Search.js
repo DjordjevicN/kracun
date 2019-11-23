@@ -11,11 +11,11 @@ export default function Search({ rooms }) {
     // console.log(rooms);
     const { handleChange, type, price, address, status, location, size, bedrooms, maxPrice } = context
 
-    console.log(price);
+    // console.log(price);
 
     //   getting unique types
     let types = getUnique(rooms, 'type');
-    types = ['all', ...types];
+    types = ['sve', ...types];
     // map to jsx
     types = types.map((item, index) => {
         return <option value={item} key={index}>{item}</option>
@@ -23,20 +23,18 @@ export default function Search({ rooms }) {
 
     // location
     let locations = getUnique(rooms, 'location');
-    locations = ['all', ...locations];
+    locations = ['sve', ...locations];
     // map to jsx
     locations = locations.map((item, index) => {
         return <option value={item} key={index}>{item}</option>
     })
     // status
     let propertyStatus = getUnique(rooms, 'status');
-    propertyStatus = ['all', ...propertyStatus];
+    propertyStatus = ['sve', ...propertyStatus];
     // map to jsx
     propertyStatus = propertyStatus.map((item, index) => {
         return <option value={item} key={index}>{item}</option>
     })
-
-
 
 
     return (
@@ -63,22 +61,22 @@ export default function Search({ rooms }) {
 
                     {/* select location */}
                     <div className="form-group">
-                        <label htmlFor="status" className='label-tag'>Lokacija</label>
+                        <label htmlFor="status" className='label-tag'>Status</label>
                         <select name="status" id="status" value={status} className="form-control" onChange={handleChange}>
                             {propertyStatus}
 
                         </select>
                     </div>
                     {/* end select   */}
-                    {/*                  
+                    {/* 
                     <div className="form-group">
                         <label htmlFor="price">Cena</label>
                         <div className="price-input">
                             <input type='number' name='minPrice' id='price' value={price} onChange={handleChange} className="size-input" />
                             <input type='number' name='maxPrice' id='price' value={maxPrice} onChange={handleChange} className="size-input" />
                         </div>
-                    </div>
-                    */}
+                    </div> */}
+
 
                 </form>
             </div>

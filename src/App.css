@@ -359,22 +359,23 @@ a{
 }
 
 .small-images {
-   
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-columns: repeat(auto-fill, 400px);
     grid-gap: 10px;
     justify-content: center;
     justify-items: center;
+    grid-auto-flow: dense;
 }
+
 .small-images img{
     width: 400px;
 }
 .small-images img:hover{
     transform: scale(1.5);
     z-index: 100;
-    
-    transition: all 1000ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 .single-property-information{
     text-align: center;
@@ -411,6 +412,7 @@ a{
     line-height: 400px;
 }
 .error-subtitle{
+   
     color: white;
     font-size: 8vw;
     margin: 0;
@@ -423,6 +425,10 @@ a{
      padding: 10px 40px;
      border-radius: 10px;
      cursor: pointer;
+}
+
+.smallImage:target{
+    width: 100%;
 }
 
 @media only screen and  (max-width : 1524px)
@@ -564,8 +570,6 @@ a{
  }
 
 @media only screen and  (max-width : 360px){
-    
-   
    .hero-animation{
     height: 100px;
     top: 230px;

@@ -4,14 +4,14 @@ import defaultImg from '../images/details-2.jpeg'
 import { Link } from 'react-router-dom'
 
 export default function Property({ room }) {
-    // console.log(room);
+
 
     const { images, price, name, slug, size, status, location, bedrooms, bathrooms } = room
     return (
         <div>
             <div className="property-card" >
                 <Link to={`/property/${slug}`} >
-                    <img src={images[0] || defaultImg} alt="singleroom" />
+                    <img src={images[0] || defaultImg} alt="singleRoom" />
                 </Link>
 
                 <p className="price-box">
@@ -26,7 +26,7 @@ export default function Property({ room }) {
                 <div className="card-border"></div>
                 <div className="card-icons">
                     <ul>
-                        <li><FaHome /> {size} m2</li>
+                        <li><FaHome /> {size}&#13217;</li>
                         <li><FaBed /> {bedrooms}</li>
                         <li><FaBath /> {bathrooms}</li>
                     </ul>

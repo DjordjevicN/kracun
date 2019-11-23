@@ -19,7 +19,7 @@ export default function NavBar() {
                         <a href="#contact">
                             <li>Kontakt</li>
                         </a>
-                        <Link to='/Gallery'> <li>Gallery</li></Link>
+                        <Link to='/Gallery'> <li>Galerija</li></Link>
 
                     </ul>
                 </div>

@@ -12,10 +12,10 @@ class RoomProvider extends Component {
         loading: true,
         //
         price: 0,
-        type: "",
+        type: "sve",
         address: '',
-        status: '',
-        location: 'all',
+        status: 'sve',
+        location: 'sve',
         size: 0,
         bedrooms: 0,
         bathrooms: 0,
@@ -50,10 +50,12 @@ class RoomProvider extends Component {
 
     }
     handleChange = (event) => {
-        // const type = event.target.type
+        console.log('change');
+
         const target = event.target
-        const value = target.type === 'checkbox' ? target.checked : target.value
+        // const value = target.type === 'checkbox' ? target.checked : target.value
         const name = event.target.name;
+        const value = target.value;
         this.setState({
             [name]: value
         }, this.filterRooms)
@@ -76,14 +78,14 @@ class RoomProvider extends Component {
 
         let tempRooms = [...rooms];
         //type
-        if (type !== 'all') {
+        if (type !== 'sve') {
             tempRooms = tempRooms.filter(room => room.type === type)
         }
 
-        if (location !== 'all') {
+        if (location !== 'sve') {
             tempRooms = tempRooms.filter(room => room.location === location)
         }
-        if (status !== 'all') {
+        if (status !== 'sve') {
             tempRooms = tempRooms.filter(room => room.status === status)
         }
         tempRooms = tempRooms.filter(room => room.price >= 0 && room.price <= maxPrice)
